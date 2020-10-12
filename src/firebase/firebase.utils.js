@@ -2,7 +2,7 @@ import firebase from 'firebase/app';
 import 'firebase/firestore';
 import 'firebase/auth';
 
-const config = {
+const firebaseConfig = {
     apiKey: "AIzaSyD1Xx73LdH040Iv6McAoQ_TwWGW0_lYCUY",
     authDomain: "crown-db-e7da6.firebaseapp.com",
     databaseURL: "https://crown-db-e7da6.firebaseio.com",
@@ -13,7 +13,7 @@ const config = {
     measurementId: "G-31XWFPVWYT"
 };
 
-firebase.initializeApp(config);
+firebase.initializeApp(firebaseConfig);
 
 export const auth = firebase.auth();
 export const firestore = firebase.firestore();
